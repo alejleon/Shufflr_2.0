@@ -1,7 +1,7 @@
 {
-  "name": "webpackboiler",
+  "name": "Shufflr_2.0",
   "version": "1.0.0",
-  "description": "Webpack Boilerplate for projects",
+  "description": "App that extends functionality of a user's Discogs account",
   "main": "index.js",
   "scripts": {
     "test": "test",
@@ -14,13 +14,10 @@
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-react": "^7.16.0",
-    "autoprefixer": "^10.3.7",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.4.0",
     "html-webpack-plugin": "^5.4.0",
     "mini-css-extract-plugin": "^2.4.2",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^12.3.0",
     "style-loader": "^3.3.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.58.1",
