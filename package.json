@@ -4,7 +4,7 @@
   "description": "App that extends functionality of a user's Discogs account",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "jest",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --config webpack.dev.js --mode development"
   },
