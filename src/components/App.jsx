@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './app.css';
-import MainLanding from './mainLanding';
+import Shuffler from './Shuffler.jsx';
+import Collection from './Collection.jsx';
+
+
 
 const App = () => {
 
 
-  return(
+  return (
+
+
+
+
     <div className='container'>
       <div className="header">
         <h1>This is now the Shfflr App!</h1>
-        <MainLanding />
+        <div>
+          <Shuffler />
+          <Collection />
+        </div>
+
       </div>
       <div className='reactLogo'></div>
     </div>
