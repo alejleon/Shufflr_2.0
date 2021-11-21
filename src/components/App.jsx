@@ -17,24 +17,28 @@ const App = () => {
   return (
 
     <div className='container'>
+      {/* <Grid container> */}
       <div className="header">
         <h1>Shuffler</h1>
         <div>
         </div>
-      <Grid>
+
       </div>
       <Button variant="contained" color='primary'> Sign In</Button>
-      <div>\
+      <div>
         or
         <Button variant='text'>create an account here</Button>
       </div>
       <Button variant='contained'>Quick Shuffle</Button>
-      </Grid>
+
+
+
 
       <Login />
       <Shuffler />
       <Collection />
       <div className='reactLogo'></div>
+      {/* </Grid> */}
     </div >
   )
 }
