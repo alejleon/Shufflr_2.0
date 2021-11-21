@@ -14,7 +14,7 @@ const SignIn = () => {
 
   return (
     <div>
-      <input onKeyUp={handleUsernameInput}>
+      <input onChange={handleUsernameInput}>
       </input>
     </div>
   )
