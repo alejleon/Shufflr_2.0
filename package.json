@@ -21,6 +21,8 @@
     "jest": "^27.3.1",
     "mini-css-extract-plugin": "^2.4.2",
     "postcss": "^8.3.11",
+    "postcss-loader": "^6.2.0",
+    "postcss-preset-env": "^7.0.1",
     "style-loader": "^3.3.1",
     "tailwindcss": "^2.2.19",
     "url-loader": "^4.1.1",

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './app.css';
 import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 import Shuffler from './Shuffler.jsx';
 import Collection from './Collection.jsx';
 import Login from './Login.jsx';
@@ -20,7 +21,7 @@ const App = () => {
         <h1>Shuffler</h1>
         <div>
         </div>
-
+      <Grid>
       </div>
       <Button variant="contained" color='primary'> Sign In</Button>
       <div>\
@@ -28,13 +29,13 @@ const App = () => {
         <Button variant='text'>create an account here</Button>
       </div>
       <Button variant='contained'>Quick Shuffle</Button>
-
+      </Grid>
 
       <Login />
       <Shuffler />
       <Collection />
       <div className='reactLogo'></div>
-    </div>
+    </div >
   )
 }
 
