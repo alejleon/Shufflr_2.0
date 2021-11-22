@@ -9,6 +9,7 @@ db.once('open', function () {
 
 const Schema = mongoose.Schema;
 
+//Schema
 var userCollectionSchema = new Schema({
   username: String,
   user_id: Number,
@@ -55,4 +56,36 @@ var userCollectionSchema = new Schema({
   ]
 });
 
+//Models
 const UserCollection = mongoose.model('UserCollection', userCollectionSchema);
+
+//Queries
+const insertCollection = (username, releases, callback) => {
+  UserCollection.create({
+    username: username,
+    releases: releases
+  }, (err, response) => {
+    if (err) {
+      callback(err, null)
+    } else {
+      callback(null, response)
+    }
+  })
+}
+
+const getCollection = (username, callback) => {
+  UserCollectionfind({
+    username: username
+  }, (err, collection) => {
+    if (err) {
+      callback(err, null)
+    } else {
+      callback(null, collection)
+    }
+  })
+}
+
+module.exports = {
+  insertCollection,
+  getCollection
+}
